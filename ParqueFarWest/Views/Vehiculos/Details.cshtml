@@ -1,0 +1,58 @@
+﻿@model ParqueFarWest.Models.Vehiculo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Vehiculo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoDeVehiculoId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoDeVehiculoId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MarcaId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MarcaId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Modelo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Modelo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Patente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Patente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Kilometraje)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kilometraje)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.VehiculoId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,57 @@
+﻿@model IEnumerable<ParqueFarWest.Models.Vehiculo>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TipoDeVehiculoId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MarcaId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Modelo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Patente)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Kilometraje)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TipoDeVehiculoId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MarcaId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Modelo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Patente)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Kilometraje)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.VehiculoId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.VehiculoId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.VehiculoId })
+        </td>
+    </tr>
+}
+
+</table>

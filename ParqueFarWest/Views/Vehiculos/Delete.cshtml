@@ -1,0 +1,64 @@
+﻿@model ParqueFarWest.Models.Vehiculo
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Vehiculo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoDeVehiculoId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoDeVehiculoId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MarcaId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MarcaId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Modelo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Modelo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Patente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Patente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Kilometraje)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kilometraje)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

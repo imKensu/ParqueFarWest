@@ -1,0 +1,51 @@
+﻿@model IEnumerable<ParqueFarWest.Models.EstacionDeServicio>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NombreEstacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProvinciaId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LocalidadId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TelefonoDeContacto)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NombreEstacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProvinciaId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LocalidadId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TelefonoDeContacto)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.EstacionId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.EstacionId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.EstacionId })
+        </td>
+    </tr>
+}
+
+</table>

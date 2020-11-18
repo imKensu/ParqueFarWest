@@ -1,0 +1,50 @@
+﻿@model ParqueFarWest.Models.EstacionDeServicio
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>EstacionDeServicio</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreEstacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreEstacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProvinciaId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProvinciaId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LocalidadId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LocalidadId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TelefonoDeContacto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TelefonoDeContacto)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EstacionId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

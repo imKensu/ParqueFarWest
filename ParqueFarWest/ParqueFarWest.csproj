@@ -167,15 +167,26 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Context\FarwestDbContext.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CombustiblesYLubricantesController.cs" />
+    <Compile Include="Controllers\EstacionesDeServiciosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MarcasDeCombustiblesYLubricantesController.cs" />
+    <Compile Include="Controllers\ProvinciasController.cs" />
+    <Compile Include="Controllers\VehiculosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\CombustibleYLubricante.cs" />
+    <Compile Include="Models\MarcaDeCombustibleYLubricante.cs" />
+    <Compile Include="Models\EstacionDeServicio.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Provincia.cs" />
+    <Compile Include="Models\Vehiculo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -235,6 +246,36 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Provincias\Create.cshtml" />
+    <Content Include="Views\Provincias\Delete.cshtml" />
+    <Content Include="Views\Provincias\Details.cshtml" />
+    <Content Include="Views\Provincias\Edit.cshtml" />
+    <Content Include="Views\Provincias\Index.cshtml" />
+    <Content Include="Views\Vehiculos\Create.cshtml" />
+    <Content Include="Views\Vehiculos\Delete.cshtml" />
+    <Content Include="Views\Vehiculos\Details.cshtml" />
+    <Content Include="Views\Vehiculos\Edit.cshtml" />
+    <Content Include="Views\Vehiculos\Index.cshtml" />
+    <Content Include="Views\EstacionDeServicios\Create.cshtml" />
+    <Content Include="Views\EstacionDeServicios\Delete.cshtml" />
+    <Content Include="Views\EstacionDeServicios\Details.cshtml" />
+    <Content Include="Views\EstacionDeServicios\Edit.cshtml" />
+    <Content Include="Views\EstacionDeServicios\Index.cshtml" />
+    <Content Include="Views\EstacionesDeServicios\Create.cshtml" />
+    <Content Include="Views\EstacionesDeServicios\Delete.cshtml" />
+    <Content Include="Views\EstacionesDeServicios\Details.cshtml" />
+    <Content Include="Views\EstacionesDeServicios\Edit.cshtml" />
+    <Content Include="Views\EstacionesDeServicios\Index.cshtml" />
+    <Content Include="Views\MarcasDeCombustiblesYLubricantes\Create.cshtml" />
+    <Content Include="Views\MarcasDeCombustiblesYLubricantes\Delete.cshtml" />
+    <Content Include="Views\MarcasDeCombustiblesYLubricantes\Details.cshtml" />
+    <Content Include="Views\MarcasDeCombustiblesYLubricantes\Edit.cshtml" />
+    <Content Include="Views\MarcasDeCombustiblesYLubricantes\Index.cshtml" />
+    <Content Include="Views\CombustiblesYLubricantes\Create.cshtml" />
+    <Content Include="Views\CombustiblesYLubricantes\Delete.cshtml" />
+    <Content Include="Views\CombustiblesYLubricantes\Details.cshtml" />
+    <Content Include="Views\CombustiblesYLubricantes\Edit.cshtml" />
+    <Content Include="Views\CombustiblesYLubricantes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

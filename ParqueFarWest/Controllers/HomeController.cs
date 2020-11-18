@@ -22,7 +22,7 @@ namespace ParqueFarWest.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contacto page.";
+            ViewBag.Message = "Your contactop page.";
 
             return View();
         }
